@@ -1,11 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from sklearn import datasets
-
-datasets
-
-df=pd.read_csv('/content/house_price_dataset_original_v2_cleaned.csv')
+df=pd.read_csv('/content/org.csv')
 
 df
 
@@ -13,7 +9,7 @@ y=df.property_value
 
 y
 
-x=df[['land_sizex_sqm', 'house_size_sqm', 'no_of_rooms', 'no_of_bathrooms', 'large_living_room', 'parking_space', 'front_garden', 'swimming_pool', 'distance_to_school', 'wall_fence', 'house_age', 'water_front', 'distance_to_supermarket_km', 'crime_rate_index', 'room_size']]
+x=df[['land_size_sqm', 'house_size_sqm', 'no_of_rooms', 'no_of_bathrooms', 'living_room', 'parking_space', 'front_garden', 'swimming_pool', 'house_age', 'crime_rate_index']]
 
 x
 
@@ -41,10 +37,6 @@ y_pred=alg1.predict(x_test)
 accuracy=alg1.score(x_train,y_train)
 
 print(accuracy)
-
-from sklearn.metrics import accuracy_score
-acc2=alg1.score(x,y)
-print(acc2)
 
 import matplotlib.pyplot as plt
 

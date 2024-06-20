@@ -9,7 +9,7 @@ y=df.property_value
 
 y
 
-x=df[['land_size_sqm', 'house_size_sqm', 'no_of_rooms', 'no_of_bathrooms', 'living_room', 'parking_space', 'front_garden', 'swimming_pool', 'house_age', 'crime_']]
+x=df[['land_size_sqm', 'house_size_sqm', 'no_of_rooms', 'no_of_bathrooms', 'living_room', 'parking_space', 'front_garden', 'swimming_pool', 'house_age', 'Land_Rate_per_Acre']]
 
 x
 

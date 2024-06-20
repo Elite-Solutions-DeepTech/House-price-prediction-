@@ -9,7 +9,7 @@ y=df.property_value
 
 y
 
-x=df[['land_size_sqm', 'house_size_sqm', 'no_of_rooms', 'no_of_bathrooms', 'living_room', 'parking_space', 'front_garden', 'swimming_pool', 'house_age', 'crime_rate_index']]
+x=df[['land_size_sqm', 'house_size_sqm', 'no_of_rooms', 'no_of_bathrooms', 'living_room', 'parking_space', 'front_garden', 'swimming_pool', 'house_age', 'crime_']]
 
 x
 
@@ -37,6 +37,10 @@ y_pred=alg1.predict(x_test)
 accuracy=alg1.score(x_train,y_train)
 
 print(accuracy)
+
+from sklearn.metrics import accuracy_score
+acc2=alg1.score(x,y)
+print(acc2)
 
 import matplotlib.pyplot as plt
 
